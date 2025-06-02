@@ -15,7 +15,7 @@ export default function Home() {
                 <div className="relative">
                   <div className="absolute  opacity-0 group-hover:opacity-100 blur transition-all duration-300"></div>
                   <div className="relative bg-white rounded-full p-1 transform group-hover:scale-110 transition-transform duration-300">
-                    <img src="/src/assets/tibanow logo.png" alt="TibaNow Logo" className="h-10 w-10 object-contain" />
+                    <img src="/src/assets/tibanow logo.png" alt="TibaNow Logo" className="h-14 w-14 sm:h-16 sm:w-16 object-contain" />
                   </div>
                 </div>
               </Link>
@@ -83,7 +83,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32 relative z-10">
+        <div className="w-full max-w-[95%] xl:max-w-[85%] 2xl:max-w-[80%] mx-auto pt-20 pb-32 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-white">
