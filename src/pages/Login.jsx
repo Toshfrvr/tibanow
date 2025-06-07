@@ -14,6 +14,16 @@ export default function Login() {
     e.preventDefault()
     setError('') // reset error
 
+    // For demo purposes - admin login with password 123
+    if (form.username === 'admin' && form.password === '123') {
+      localStorage.setItem('access_token', 'demo_token')
+      localStorage.setItem('refresh_token', 'demo_refresh')
+      localStorage.setItem('user_role', 'patient') // Set as patient for dashboard
+      console.log('Admin login successful ✅')
+      navigate('/dashboard/patient') // Redirect to patient dashboard
+      return
+    }
+
     try {
       const response = await fetch('http://localhost:8000/api/auth/login/', {
         method: 'POST',
@@ -52,7 +62,7 @@ export default function Login() {
       {/* Decorative Images */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <img
-          src="/src/assets/happy-black-male-doctor-pointing-empty-space-presenting-product.jpg"
+          src="https://img.freepik.com/free-photo/happy-black-male-doctor-pointing-empty-space-presenting-product_1262-12349.jpg?t=st=1749311091~exp=1749314691~hmac=077b444b397db6e69a8f76e1a91a6cf7f76d6a27d80ad645568310adff2edbe7&w=1380"
           alt="Doctor Presenting"
           className="absolute top-0 right-0 w-full h-full object-cover opacity-30 transform rotate-6 scale-110"
         />
