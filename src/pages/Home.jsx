@@ -247,7 +247,20 @@ export default function Home() {
 
        
 
-
+          {/* Notification Card */}
+          <div className="absolute top-32 right-4 w-46 transform rotate-2 hover:rotate-0 transition-transform duration-500">
+            <div className="bg-white/95 backdrop-blur-xl rounded-xl p-3 shadow-lg border border-white/20">
+              <div className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium text-gray-700">Appointment confirmed</span>
+              </div>
+              <p className="text-xs text-gray-500 mt-1">Today at 3:00 PM with Dr. Johnson</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   {/* Scroll Indicator */}
   <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
