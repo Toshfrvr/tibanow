@@ -106,6 +106,15 @@ export default function Login() {
                   />
                 </div>
               </div>
+              <div className="space-y-4">
+                <select name="" id="">
+                  <option value="doctor">doctor</option>
+                  <option value="patient">patient</option>
+                  <option value="user">user</option>
+                
+                
+                  </select>
+              </div>
               <div>
                 <label htmlFor="password" className="sr-only">Password</label>
                 <div className="relative group">
